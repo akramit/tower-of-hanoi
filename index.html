@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" href="toh.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>🗼 Tower of Hanoi</h1>
+        
+        <div class="game-area">
+            <div class="rod" id="rod1">
+                <div class="rod-base"></div>
+                <div class="rod-pole"></div>
+                <div class="rod-label">Rod 1</div>
+            </div>
+            <div class="rod" id="rod2">
+                <div class="rod-base"></div>
+                <div class="rod-pole"></div>
+                <div class="rod-label">Rod 2</div>
+            </div>
+            <div class="rod" id="rod3">
+                <div class="rod-base"></div>
+                <div class="rod-pole"></div>
+                <div class="rod-label">Rod 3</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="fromRod">From Rod</label>
+                <select id="fromRod">
+                    <option value="1">Rod 1</option>
+                    <option value="2">Rod 2</option>
+                    <option value="3">Rod 3</option>
+                </select>
+            </div>
+            
+            <button onclick="moveDisk()">Move</button>
+            
+            <div class="control-group">
+                <label for="toRod">To Rod</label>
+                <select id="toRod">
+                    <option value="1">Rod 1</option>
+                    <option value="2">Rod 2</option>
+                    <option value="3">Rod 3</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="message" class="message" style="display: none;"></div>
+    </div>
+
+    <script src="toh.js"> </script>
+</body>
+</html>
